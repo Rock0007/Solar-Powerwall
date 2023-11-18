@@ -92,7 +92,7 @@ const Login = () => {
         <button
           type="button"
           onClick={handleLogin}
-          className="bg-black text-white px-4 py-2 rounded-md hover:bg-black hover:shadow-lg shadow-lg"
+          className="bg-black text-white px-24 py-2 rounded-md hover:bg-black hover:shadow-lg shadow-lg"
         >
           Login
         </button>
@@ -100,7 +100,7 @@ const Login = () => {
           Don't have an account?{" "}
           <Link
             to="/signup"
-            className="text-gray-500 hover:text-black underline focus:text-black hover:underline focus:underline"
+            className="text-gray-500 hover:text-black underline focus:text-black hover:underline focus:underline "
           >
             Sign-up
           </Link>
@@ -113,7 +113,7 @@ const Login = () => {
         </div>
 
         <button
-          className="bg-black text-white px-4 py-2 rounded-md flex items-center justify-center mt-4"
+          className="bg-black text-white px-4 py-3 rounded-md flex items-center justify-center mt-4 ml-1"
           onClick={handleGoogleLogin}
         >
           <FaGoogle className="mr-2" /> Continue with Google

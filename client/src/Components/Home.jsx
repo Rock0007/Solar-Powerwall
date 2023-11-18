@@ -1,6 +1,6 @@
 import React from "react";
 import { Footer, Navbar } from "./index";
-import { Home3, Home1, Home2, Home4 } from "../Assets/index";
+import { Home3, Home2, Home4, Home_Vid_1 } from "../Assets/index";
 
 const Home = () => {
   return (
@@ -11,8 +11,7 @@ const Home = () => {
         {/* Left Section - Text */}
         <div className="w-2/3 pr-8">
           <h1 className="text-6xl font-extrabold text-black mb-6">
-            Solar Powerwall <br />
-            Consumption
+            Next-Gen Solar Monitoring <br />
           </h1>
           <p className="text-black mb-4">
             At Solar Powerwall, we embark on a transformative journey to
@@ -26,11 +25,15 @@ const Home = () => {
 
         {/* Right Section - Image */}
         <div className="w-2/3">
-          <img
-            src={Home1}
-            alt="Solar Panels"
+          <video
             className="w-full h-auto rounded-lg"
-          />
+            autoPlay
+            loop
+            muted
+            playsInline
+          >
+            <source src={Home_Vid_1} type="video/mp4" />
+          </video>
         </div>
       </div>
       {/*  Section - 2 */}

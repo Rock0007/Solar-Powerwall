@@ -9,7 +9,7 @@ const Hardware = () => {
       {/*Section - 1 */}
       <div className="flex-grow flex flex-col items-start justify-center py-40 px-32">
         <h1 className="text-4xl font-extrabold text-gray-800 mb-6 italic">
-          Renewable Energy Monitoring System
+          Precision Monitoring System
         </h1>
 
         <h2 className="text-2xl font-bold text-gray-700 mb-4">
@@ -217,18 +217,6 @@ const Hardware = () => {
               and optimizing power generation. By accurately measuring sunlight
               intensity, our system can dynamically adjust to varying light
               conditions, maximizing energy harvesting efficiency.
-            </p>
-          </div>
-
-          {/* Humidity Sensor */}
-          <div className="p-4 border rounded-lg bg-black hover:bg-gray-800 shadow-md transition duration-300">
-            <h2 className="text-xl font-bold mb-2">Humidity Sensor</h2>
-            <p className="text-gray-300">
-              The Humidity Sensor contributes to a comprehensive environmental
-              monitoring approach. By tracking humidity levels, our solar panel
-              system gains insights into the surrounding conditions, ensuring
-              resilience against adverse weather and environmental factors for
-              sustained performance.
             </p>
           </div>
         </div>
