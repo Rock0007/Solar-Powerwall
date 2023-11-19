@@ -23,7 +23,7 @@ const Navbar = () => {
       {/* Left side */}
       <Link
         to="/"
-        className="text-3xl italic font-bold select-none text-orange-400 rounded-sm"
+        className="text-3xl italic font-bold select-none text-white rounded-sm"
       >
         Solar
       </Link>
