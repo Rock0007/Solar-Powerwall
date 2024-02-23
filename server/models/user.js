@@ -1,9 +1,10 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
+const moment = require("moment-timezone");
 
-//schema
+// schema
 const userSchema = new Schema({
-  fullName: {
+  name: {
     type: String,
     required: true,
   },
@@ -16,19 +17,16 @@ const userSchema = new Schema({
     type: String,
     required: true,
   },
-  area: {
-    type: String,
-    enum: [
-      "Asia",
-      "Africa",
-      "North America",
-      "South America",
-      "Antarctica",
-      "Europe",
-      "Australia",
-    ],
-    required: true,
+  registrationDate: {
+    type: Date,
+    default: Date.now,
   },
+});
+
+userSchema.virtual("formattedRegistrationDate").get(function () {
+  return moment(this.registrationDate)
+    .tz("Asia/Kolkata")
+    .format("DD-MM-YYYY hh:mm:ss A");
 });
 
 const User = mongoose.model("User", userSchema);
